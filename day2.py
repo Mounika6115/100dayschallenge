@@ -144,16 +144,16 @@ print("Net Revenue =", net_revenue)
 # Task: Process usage day by day and stop when the limit is exceeded.
 # Expected Output:
 # Limit Exceeded On Day 4 Used = 2300 MB
-# usage = [450, 600, 700, 550]
-# limit = 2000
-# total = 0
-# day = 0
-# while day < len(usage):
-#     total += usage[day]
-#     if total > limit:
-#         print("Limit Exceeded On Day", day + 1, "Used =", total, "MB")
-#         break
-#     day += 1
+usage = [450, 600, 700, 550]
+limit = 2000
+total = 0
+day = 0
+while day < len(usage):
+    total += usage[day]
+    if total > limit:
+        print("Limit Exceeded On Day", day + 1, "Used =", total, "MB")
+        break
+    day += 1
 
 
 
@@ -165,27 +165,27 @@ print("Net Revenue =", net_revenue)
 # # A	= 4
 # # B	= 2
 # # C	= 1
-# # Winner = A
-# votes = ['A', 'B', 'A', 'C', 'A', 'B', 'A'] 
-# a = 0
-# b = 0
-# c = 0
-# for i in votes:
-#     if i == 'A':
-#         a += 1
-#     elif i == 'B':
-#         b += 1
-#     elif i == 'C':
-#         c += 1
-# print("A =", a)
-# print("B =", b)
-# print("C =", c)
-# if a > b and a > c:
-#     print("Winner = A")
-# elif b > a and b > c:
-#     print("Winner = B")
-# else:
-#     print("Winner = C")
+# Winner = A
+votes = ['A', 'B', 'A', 'C', 'A', 'B', 'A'] 
+a = 0
+b = 0
+c = 0
+for i in votes:
+    if i == 'A':
+        a += 1
+    elif i == 'B':
+        b += 1
+    elif i == 'C':
+        c += 1
+print("A =", a)
+print("B =", b)
+print("C =", c)
+if a > b and a > c:
+    print("Winner = A")
+elif b > a and b > c:
+    print("Winner = B")
+else:
+    print("Winner = C")
 
 
 
@@ -199,20 +199,20 @@ print("Net Revenue =", net_revenue)
 # Cars = 3
 # Bikes = 2
 # Trucks = 1
-# vehicles = ['C', 'B', 'C', 'T', 'B', 'C']
-# cars = 0
-# bikes = 0
-# trucks = 0
-# for i in vehicles:
-#     if i == 'C':
-#         cars += 1
-#     elif i == 'B':
-#         bikes += 1
-#     elif i == 'T':
-#         trucks += 1
-# print("Cars =", cars)
-# print("Bikes =", bikes)
-# print("Trucks =", trucks)
+vehicles = ['C', 'B', 'C', 'T', 'B', 'C']
+cars = 0
+bikes = 0
+trucks = 0
+for i in vehicles:
+    if i == 'C':
+        cars += 1
+    elif i == 'B':
+        bikes += 1
+    elif i == 'T':
+        trucks += 1
+print("Cars =", cars)
+print("Bikes =", bikes)
+print("Trucks =", trucks)
 
 
 
