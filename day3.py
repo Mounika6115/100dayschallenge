@@ -4,12 +4,12 @@
 # Example Data: num = 24
 # Task: Print all factors of the given number.
 # Expected Output: 1, 2, 3, 4, 6, 8, 12, 24 
-# num = 24
-# i=1
-# while i <num:
-#     if num % i==0:
-#       print(i,end=" ")
-#     i+=1
+num = 24
+i=1
+while i <num:
+    if num % i==0:
+      print(i,end=" ")
+    i+=1
 
 
 
@@ -19,14 +19,14 @@
 # Example Data: num = 24
 # Task: Count the total number of factors.
 # Expected Output: Total Factors = 8 
-# num = 24
-# i=1
-# count=0
-# while i<=num:
-#     if num %i ==0:
-#         count+=1
-#     i+=1
-# print("Total Factors =", count)
+num = 24
+i=1
+count=0
+while i<=num:
+    if num %i ==0:
+        count+=1
+    i+=1
+print("Total Factors =", count)
 
 
 
@@ -36,13 +36,13 @@
 # Example Data: a = 12, b = 18
 # Task: Print all common factors.
 # Expected Output: 1, 2, 3, 6 
-# a = 12
-# b = 18
-# i=1
-# while i<=a and i<=b:
-#     if a%i==0 and b%i==0:
-#         print(i,end=" ")
-#     i+=1
+a = 12
+b = 18
+i=1
+while i<=a and i<=b:
+    if a%i==0 and b%i==0:
+        print(i,end=" ")
+    i+=1
 
 
 
@@ -52,15 +52,15 @@
 # Example Data: a = 12, b = 18
 #  Task: Find the HCF. 
 # Expected Output: HCF = 6 
-# a = 12
-# b = 18
-# i=1
-# hcf=1
-# while i<=a and i<=b:
-#     if a%i==0 and b%i==0:
-#         hcf=i
-#     i+=1
-# print(f"HCF:{hcf}")
+a = 12
+b = 18
+i=1
+hcf=1
+while i<=a and i<=b:
+    if a%i==0 and b%i==0:
+        hcf=i
+    i+=1
+print(f"HCF:{hcf}")
 
 
 
@@ -70,12 +70,12 @@
 # Example Data: a = 12, b = 18 
 # Task: Find the LCM. 
 # Expected Output: LCM = 36 
-# a = 12
-# b = 18
-# lcm = a
-# while lcm % a != 0 or lcm % b != 0:
-#     lcm += 1
-# print(f"LCM:{lcm}")
+a = 12
+b = 18
+lcm = a
+while lcm % a != 0 or lcm % b != 0:
+    lcm += 1
+print(f"LCM:{lcm}")
 
 
 
@@ -85,18 +85,18 @@
 # Example Data: a = 8, b = 15
 # Task: Check whether the numbers are coprime.
 # Expected Output: Coprime Numbers 
-# a = 8
-# b = 15
-# i=1
-# hcf=1
-# while i<=a and i<=b:
-#     if a%i ==0 and b%i ==0:
-#        hcf=1
-#     i+=1
-# if hcf==1:
-#     print("coprime numbers")
-# else:
-#     print("not coprime numbers")
+a = 8
+b = 15
+i=1
+hcf=1
+while i<=a and i<=b:
+    if a%i ==0 and b%i ==0:
+       hcf=1
+    i+=1
+if hcf==1:
+    print("coprime numbers")
+else:
+    print("not coprime numbers")
 
 
 
@@ -106,17 +106,17 @@
 # Example Data: num = 28
 # Task: Check whether the number is perfect.
 # Expected Output: Perfect Number  
-# num = 28
-# i = 1
-# sum = 0
-# while i < num:
-#     if num % i == 0:
-#         sum += i
-#     i += 1
-# if sum == num:
-#     print("Perfect Number")
-# else:
-#     print("Not a Perfect Number")
+num = 28
+i = 1
+sum = 0
+while i < num:
+    if num % i == 0:
+        sum += i
+    i += 1
+if sum == num:
+    print("Perfect Number")
+else:
+    print("Not a Perfect Number")
 
 
 
@@ -126,13 +126,13 @@
 # Example Data: num = 36
 # Task: Print the greatest factor other than the number.
 # Expected Output: 18
-# num = 36
-# i = num - 1
-# while i >= 1:
-#     if num % i == 0:
-#         print("Greatest Factor:", i)
-#         break
-#     i -= 1
+num = 36
+i = num - 1
+while i >= 1:
+    if num % i == 0:
+        print("Greatest Factor:", i)
+        break
+    i -= 1
 
 
 
@@ -142,12 +142,12 @@
 # Example Data: machine1 = 12, machine2 = 18
 # Task: Find after how many minutes both machines will complete a cycle together again.
 # Expected Output: 36 Minutes 
-# machine1 = 12
-# machine2 = 18
-# lcm = machine1
-# while lcm % machine1 != 0 or lcm % machine2 != 0:
-#     lcm += 1
-# print(f"{lcm} Minutes")
+machine1 = 12
+machine2 = 18
+lcm = machine1
+while lcm % machine1 != 0 or lcm % machine2 != 0:
+    lcm += 1
+print(f"{lcm} Minutes")
 
 
 
