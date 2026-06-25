@@ -4,17 +4,17 @@
 # Task: 1 means logged in and 0 means missed day. Find the longest continuous login streak. 
 # Expected Output:
 # Longest Streak = 3
-# logins = [1, 1, 0, 1, 1, 1, 0, 1]
-# longest_streak = 0
-# current_streak = 0
-# for i in logins:
-#     if i == 1:
-#         current_streak += 1
-#         if current_streak > longest_streak:
-#             longest_streak = current_streak
-#     else:
-#         current_streak = 0
-# print(f"Longest continuous login streak: {longest_streak}")
+logins = [1, 1, 0, 1, 1, 1, 0, 1]
+longest_streak = 0
+current_streak = 0
+for i in logins:
+    if i == 1:
+        current_streak += 1
+        if current_streak > longest_streak:
+            longest_streak = current_streak
+    else:
+        current_streak = 0
+print(f"Longest continuous login streak: {longest_streak}")
 
 
 # 2.	Password Strength Checker
@@ -27,24 +27,24 @@
 # Lowercase = 3
 # Digits = 3
 # Strong Password
-# password = "Abc123X"
-# uppercase_letters = 0
-# lowercase_letters = 0
-# digits = 0
-# for i in password:
-#     if i >= 'A' and i <= 'Z':
-#         uppercase_letters += 1
-#     elif i >= 'a' and i <= 'z':
-#         lowercase_letters += 1
-#     elif i >= '0' and i <= '9':
-#         digits += 1
-# print("Uppercase =", uppercase_letters)
-# print("Lowercase =", lowercase_letters)
-# print("Digits =", digits)
-# if uppercase_letters > 0 and lowercase_letters > 0 and digits > 0:
-#     print("Strong Password")
-# else:
-#     print("Weak Password")
+password = "Abc123X"
+uppercase_letters = 0
+lowercase_letters = 0
+digits = 0
+for i in password:
+    if i >= 'A' and i <= 'Z':
+        uppercase_letters += 1
+    elif i >= 'a' and i <= 'z':
+        lowercase_letters += 1
+    elif i >= '0' and i <= '9':
+        digits += 1
+print("Uppercase =", uppercase_letters)
+print("Lowercase =", lowercase_letters)
+print("Digits =", digits)
+if uppercase_letters > 0 and lowercase_letters > 0 and digits > 0:
+    print("Strong Password")
+else:
+    print("Weak Password")
 
 
 
@@ -54,15 +54,15 @@
 # Task: Ignore products with stock 0. Count how many products need restocking (stock less than 10). 
 # Expected Output:
 # Products To Restock = 2
-# stock = [25, 5, 0, 18, 3, 40]
-# count=0
-# products=0
-# for i in stock:
-#     if i ==0:
-#         continue
-#     if i<10:
-#         count+=1
-# print(f"products to restore:{count}")
+stock = [25, 5, 0, 18, 3, 40]
+count=0
+products=0
+for i in stock:
+    if i ==0:
+        continue
+    if i<10:
+        count+=1
+print(f"products to restore:{count}")
 
 
 
@@ -75,20 +75,20 @@
 # Occupied = 4
 # Empty = 3
 # Occupancy = 57.14%
-# seats = [1, 0, 1, 1, 0, 0, 1]
-# empty_seats = 0
-# occupied_seats = 0
-# i = 0
-# while i < len(seats):
-#     if seats[i] == 1:
-#         occupied_seats += 1
-#     else:
-#         empty_seats += 1
-#     i += 1
-# occupancy = (occupied_seats / len(seats)) * 100
-# print("Occupied =", occupied_seats)
-# print("Empty =", empty_seats)
-# print("Occupancy =", round(occupancy, 2), "%")
+seats = [1, 0, 1, 1, 0, 0, 1]
+empty_seats = 0
+occupied_seats = 0
+i = 0
+while i < len(seats):
+    if seats[i] == 1:
+        occupied_seats += 1
+    else:
+        empty_seats += 1
+    i += 1
+occupancy = (occupied_seats / len(seats)) * 100
+print("Occupied =", occupied_seats)
+print("Empty =", empty_seats)
+print("Occupancy =", round(occupancy, 2), "%")
 
 
 
@@ -100,16 +100,16 @@
 # Task: Stop processing when 3 consecutive failures occur.
 # Expected Output:
 # 3 Consecutive Failures Found 
-# results = ['P', 'P', 'F', 'F', 'F', 'P']
-# failure=0
-# for i in results:
-#     if i =='F':
-#       failure += 1
-#     else:
-#         failure = 0
-#     if failure == 3:
-#         print("3 Consecutive Failures Found")
-#         break
+results = ['P', 'P', 'F', 'F', 'F', 'P']
+failure=0
+for i in results:
+    if i =='F':
+      failure += 1
+    else:
+        failure = 0
+    if failure == 3:
+        print("3 Consecutive Failures Found")
+        break
      
 
 
@@ -122,18 +122,18 @@
 # Sales = 2300
 # Returns = 1300
 # Net Revenue = 1000
-# orders = [500, 800, -500, 1000, -800]
-# sales=0
-# returns=0
-# for i in orders:
-#     if i>0:
-#         sales+=i
-#     elif i<0:
-#         returns+=i
-# net_revenue = sales - returns
-# print("Sales =", sales)
-# print("Returns =", returns)
-# print("Net Revenue =", net_revenue)
+orders = [500, 800, -500, 1000, -800]
+sales=0
+returns=0
+for i in orders:
+    if i>0:
+        sales+=i
+    elif i<0:
+        returns+=i
+net_revenue = sales - returns
+print("Sales =", sales)
+print("Returns =", returns)
+print("Net Revenue =", net_revenue)
 
 
 
