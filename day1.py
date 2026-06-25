@@ -174,19 +174,19 @@ print("Average Rating =", average)
 # 2000 x 1
 # 500 x 3
 # 200 x 1
-# amount = 3700
-# while amount >= 2000:
-#     print("2000 x", amount // 2000)
-#     amount = amount % 2000
-# while amount >= 500:
-#     print("500 x", amount // 500)
-#     amount = amount % 500
-# while amount >= 200:
-#     print("200 x", amount // 200)
-#     amount = amount % 200
-# while amount >= 100:
-#     print("100 x", amount // 100)
-#     amount = amount % 100
+amount = 3700
+while amount >= 2000:
+    print("2000 x", amount // 2000)
+    amount = amount % 2000
+while amount >= 500:
+    print("500 x", amount // 500)
+    amount = amount % 500
+while amount >= 200:
+    print("200 x", amount // 200)
+    amount = amount % 200
+while amount >= 100:
+    print("100 x", amount // 100)
+    amount = amount % 100
 
 
 
