@@ -8,17 +8,17 @@
 # # Discount = 270
 # # Final Bill = 3730
 
-# prices = [500, 1200, 800, 1500]
-# total_bill = 0
-# discount = 0
-# for i in prices:
-#     total_bill+=i
-#     if i>1000:
-#        discount += i*0.10
-# final_bill=total_bill-discount
-# print("Total Bill =", total_bill)
-# print("Discount =", int(discount))
-# print(f"Final Bill = (int{final_bill})")
+prices = [500, 1200, 800, 1500]
+total_bill = 0
+discount = 0
+for i in prices:
+    total_bill+=i
+    if i>1000:
+       discount += i*0.10
+final_bill=total_bill-discount
+print("Total Bill =", total_bill)
+print("Discount =", int(discount))
+print(f"Final Bill = (int{final_bill})")
 
 
 
@@ -33,14 +33,14 @@
 # Present Days = 4
 # Attendance Percentage = 66.67
 
-# attendance = ['P', 'A', 'P', 'P', 'A', 'P']
-# present_days = 0
-# for day in attendance:
-#     if day == 'P':
-#         present_days += 1
-# percentage = (present_days / len(attendance)) * 100
-# print(present_days)
-# print(percentage)
+attendance = ['P', 'A', 'P', 'P', 'A', 'P']
+present_days = 0
+for day in attendance:
+    if day == 'P':
+        present_days += 1
+percentage = (present_days / len(attendance)) * 100
+print(present_days)
+print(percentage)
 
 
 
@@ -51,13 +51,13 @@
 # Task: -1 means item removed from cart. Ignore removed items and calculate the total amount.
 # Expected Output:
 # Total Amount = 2700 Write Your Solution Below:
-# cart = [500, -1, 700, 1200, -1, 300]
-# total_amount=0
-# for i in cart:
-#     if i ==-1:
-#         continue
-#     total_amount=total_amount+i
-# print(f"total amount :{total_amount}")
+cart = [500, -1, 700, 1200, -1, 300]
+total_amount=0
+for i in cart:
+    if i ==-1:
+        continue
+    total_amount=total_amount+i
+print(f"total amount :{total_amount}")
 
 
 
@@ -72,14 +72,14 @@
 # Insufficient Balance
 # Final Balance = 1000
 # Write Your Solution Below:
-# transactions = [5000, -2000, -3000, -4000]
-# balance = 6000
-# for i in transactions:
-#     if balance+i<0:
-#       print ("Insufficient Balance")
-#       break
-#     balance=balance+i
-# print("final balance:",balance)
+transactions = [5000, -2000, -3000, -4000]
+balance = 6000
+for i in transactions:
+    if balance+i<0:
+      print ("Insufficient Balance")
+      break
+    balance=balance+i
+print("final balance:",balance)
 
 
 
@@ -90,21 +90,20 @@
 # Concepts to Use: for loop
 # Example Data: runs = [45, 80, 22, 95, 60]
 # Task: Find the total runs, highest score, and average score.
-# Expected Output:
-# Total = 302
-# Highest = 95
-# Average = 60.4
-# runs = [45, 80, 22, 95, 60]
-# total = 0
-# highest = runs[0]
-# for i in runs:
-#     total = total + i
-#     if i > highest:
-#         highest = i
-# average = total / len(runs)
-# print("Total =", total)
-# print("Highest =", highest)
-# print("Average =", average)
+Total = 302
+Highest = 95
+Average = 60.4
+runs = [45, 80, 22, 95, 60]
+total = 0
+highest = runs[0]
+for i in runs:
+    total = total + i
+    if i > highest:
+        highest = i
+average = total / len(runs)
+print("Total =", total)
+print("Highest =", highest)
+print("Average =", average)
 
 
 
@@ -114,17 +113,17 @@
 # Task: Calculate the electricity bill using: First 100 units = ■5/unit Remaining units = ■8/unit
 # Expected Output:
 # Calculate Total Bill
-# units = [120, 150, 200, 180]
-# i = 0
-# total_bill = 0
-# while i < len(units):
-#     if units[i] <= 100:
-#         bill = units[i] * 5
-#     else:
-#         bill = (100 * 5) + ((units[i] - 100) * 8)
-#     total_bill = total_bill + bill
-#     i += 1
-# print("Total Bill =", total_bill)
+units = [120, 150, 200, 180]
+i = 0
+total_bill = 0
+while i < len(units):
+    if units[i] <= 100:
+        bill = units[i] * 5
+    else:
+        bill = (100 * 5) + ((units[i] - 100) * 8)
+    total_bill = total_bill + bill
+    i += 1
+print("Total Bill =", total_bill)
 
 
 
@@ -135,14 +134,14 @@
 # Example Data: marks = [75, 30, 82, 40, 95, 28]
 # Task: Count how many students passed and failed. Pass mark = 35.
 # Expected Output:
-# Passed = 4 Failed = 2
-# marks = [75, 30, 82, 40, 95, 28]
-# count = 0
-# for i in marks:
-#     if i >= 35:
-#         count = count + 1
-# print("Passed =", count)
-# print("Failed =", len(marks) - count)
+Passed = 4 Failed = 2
+marks = [75, 30, 82, 40, 95, 28]
+count = 0
+for i in marks:
+    if i >= 35:
+        count = count + 1
+print("Passed =", count)
+print("Failed =", len(marks) - count)
 
 
 
